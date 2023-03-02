@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: java-springboot-hello-qtur
+  namespace: burrsitis-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:8c1fcf8295895d4842500b87d57e4e535a5c1fabc7cc38cf1e71e20de01d018c
+        name: my-java-springboot
+        resources: {}
+status: {}
