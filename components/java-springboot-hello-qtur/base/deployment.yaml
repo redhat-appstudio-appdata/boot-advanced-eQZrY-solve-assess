@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: java-springboot-hello-qtur
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:eQZrY-java-springboot-hello-qtur
+      - image: quay.io/redhat-appstudio/user-workload@sha256:8c1fcf8295895d4842500b87d57e4e535a5c1fabc7cc38cf1e71e20de01d018c
         name: my-java-springboot
         ports:
         - containerPort: 8081
